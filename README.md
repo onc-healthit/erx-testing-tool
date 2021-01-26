@@ -21,7 +21,7 @@ This application needs the following infrastructure to execute the WAR file:
 - a web server (optional)
   - this is used as a reverse proxy and shields the other components from the direct access.
   
-Here is the link where the WAR file can be downloaded from:
+Here is the link where the WAR file can be downloaded from: [WAR download](https://ncpdptoolsdev2742.blob.core.windows.net/ncpdps/hit-base-tool-1.2.34.war)
 
 
 Here is the link to the WAR instructions file: [WAR Instructions](https://github.com/onc-healthit/erx-testing-tool/blob/main/war-file-instructions.md)
