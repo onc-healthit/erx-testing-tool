@@ -1,12 +1,12 @@
 # Instructions
 
-This is a copy of the validation tool version 1.2.34. A WAR file is a Web Application Resource that contains libraries and files necessary to run the web application. The war files is deployed in a web application container.
+This is a copy of the validation tool version 1.2.37. A WAR file is a Web Application Resource that contains libraries and files necessary to run the web application. The war files is deployed in a web application container.
 
 This WAR file contains:
 
 - backend logic
 - frontend logic
-- resource bundle
+- resource bundle (needs to be added to the war file as explained below)
 
 This application needs the following infrastructure to execute the WAR file:
 
@@ -31,7 +31,7 @@ In a terminal:
 go to the folder where the war file is located and type
 
 ```
-jar xvf hit-base-tool.war  WEB-INF/lib/hit-erx-tool-config-0.0.1-SNAPSHOT.jar
+jar xvf hit-base-tool-1.2.37.arc  WEB-INF/lib/hit-erx-tool-config-0.0.1-SNAPSHOT.jar
 ```
 
 This will extract the library into the WEB-INF/lib folder that contains the file. Then type
@@ -66,7 +66,7 @@ jar uvf hit-erx-tool-config-0.0.1-SNAPSHOT.jar app-config.properties
 This will replace the library's file with the updated one. Then go back to the folder that has the war file and type
 
 ```
-jar uvf hit-base-tool.war  WEB-INF/lib/hit-erx-tool-config-0.0.1-SNAPSHOT.jar
+jar uvf hit-base-tool-1.2.37.arc  WEB-INF/lib/hit-erx-tool-config-0.0.1-SNAPSHOT.jar
 ```
 
 This will replace the war file's library with the updated one.
@@ -76,6 +76,16 @@ The WEB-INF folder can then be deleted.
 ```
 rm -rf WEB-INF
 ```
+
+### Add the bundle and rebuild the war file
+
+Go to the repository root folder and run the shell file
+
+```
+sh update-war-with-bundle.sh
+```
+
+This will create a dist folder and add the bundle file to the war file which will be in the dist file
 
 ## Infrastructure
 
