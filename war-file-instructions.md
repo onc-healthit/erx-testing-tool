@@ -1,6 +1,6 @@
 # Instructions
 
-This is a copy of the validation tool version 1.2.37. A WAR file is a Web Application Resource that contains libraries and files necessary to run the web application. The war files is deployed in a web application container.
+This is a copy of the validation tool version 1.2.39. A WAR file is a Web Application Resource that contains libraries and files necessary to run the web application. The war files is deployed in a web application container.
 
 This WAR file contains:
 
@@ -31,7 +31,7 @@ In a terminal:
 go to the folder where the war file is located and type
 
 ```
-jar xvf hit-base-tool-1.2.37.arc  WEB-INF/lib/hit-erx-tool-config-0.0.1-SNAPSHOT.jar
+jar xvf hit-base-tool-1.2.39.arc  WEB-INF/lib/hit-erx-tool-config-0.0.1-SNAPSHOT.jar
 ```
 
 This will extract the library into the WEB-INF/lib folder that contains the file. Then type
@@ -55,6 +55,15 @@ server.email=<SERVER_EMAIL>
     This is the validation tool email address. It will appear in the email from field
 admin.emails=<ADMIN_EMAILS> comma delimited list (e.g. test@test.com,test1@test.com)
     This is the list of the user accounts that have admin priviledges 
+
+app.privacy.link=<TOOL_URL>/docs/privacy.html
+    This is the link to the privacy page
+app.disclaimer.link=<TOOL_URL>/docs/disclaimer.html
+    This is the link to the disclaimer page
+app.baseUrl=<TOOL_URL>/erx
+    This is the base url
+app.transport.baseUrl=<TOOL_URL>/erx
+    this is the base url for transport
 ```
 
 Save the file then type
@@ -66,7 +75,7 @@ jar uvf hit-erx-tool-config-0.0.1-SNAPSHOT.jar app-config.properties
 This will replace the library's file with the updated one. Then go back to the folder that has the war file and type
 
 ```
-jar uvf hit-base-tool-1.2.37.arc  WEB-INF/lib/hit-erx-tool-config-0.0.1-SNAPSHOT.jar
+jar uvf hit-base-tool-1.2.39.arc  WEB-INF/lib/hit-erx-tool-config-0.0.1-SNAPSHOT.jar
 ```
 
 This will replace the war file's library with the updated one.

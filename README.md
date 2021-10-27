@@ -1,5 +1,5 @@
 # NCPDP ePrescribing eRX Validation Tool Copy for the NCPDP SCRIPT Standard Version 2017071
-This is a copy of the validation tool version 1.2.37. The repository contains the WAR file and instructions to configure the WAR file. Additional installations and configuration will be needed to integrate the WAR file into the infrastructure necessary for the WAR file to run.
+This is a copy of the validation tool version 1.2.39. The repository contains the WAR file and instructions to configure the WAR file. Additional installations and configuration will be needed to integrate the WAR file into the infrastructure necessary for the WAR file to run.
 
 **The copy of the validation tool is for internal testing only, is available at no cost, is not actively updated and does not qualify as an ONC-approved test tool for the purpose of certification testing.**
 
